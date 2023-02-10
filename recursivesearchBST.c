@@ -65,7 +65,7 @@ void main()
     printf("\n");
     if(isBST(p)){
         printf("Yes it is a BST");
-        printf("Enter the key for searching: ");
+        printf("\nEnter the key for searching: ");
         scanf("%d",&key);
         struct node * n=search(p,key);
         if(n!=NULL)
