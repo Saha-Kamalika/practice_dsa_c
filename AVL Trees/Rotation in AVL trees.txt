@@ -1,0 +1,19 @@
+//////Rotation in an AVL tree(balanced factor <=1 should be maintained)
+// LL Rotation
+    7(bf=1)                                       7(bf=2)                                       5(bf=0)
+   /                 <--- 4    ------->          /                                             / \
+  5(bf=0)                                       5(bf=1)     [not avl]  --> 1 left rotation    4   7   [avl]
+                                               /                                             (0)  (0)
+                                              4(bf=0)
+// RR Rotation
+    7(bf=1)                                      7(bf=2)                                            9(bf=0)
+     \             <--- 11    ------->            \                                                / \
+      9(bf=0)                                      9(bf=1)     [not avl]  --> 1 right rotation    7   11   [avl]
+                                                    \                                            (0)  (0)
+                                                    11(bf=0) 
+// LR Rotation [SIMILARLY RL ROTATION]
+    7(bf=1)                                       7(bf=2)                                       7(bf=2)       5
+   /                 <--- 5    ------->          /                                             /     LROT    / \
+  4(bf=0)                                       4(bf=1)     [not avl]  --> 1 right rotation   5      -->    4   7  [AVL]
+                                                 \                                           /
+                                                  5                                         4                                                                       
