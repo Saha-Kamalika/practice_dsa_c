@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <stdio.h> 
 int main(void){
     char n[20];
     gets(n);
